@@ -1,0 +1,42 @@
+{
+  "title": "Stable symmetric multiaffine polynomials are Agler denominators",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.1.0-candidate",
+  "publication_date": "2026-10-10",
+  "license": "cc-zero",
+  "description": "<p>Unrefereed written-proof candidate establishing that every nonzero symmetric multiaffine polynomial stable in the open unit polydisk is an Agler denominator, for every finite dimension, using actual multidegree and no monomial multiplier. Positive inverse-binomial weights, complete coefficient transfer, finite Clark interpolation and radial approximation give the construction. Exact finite checks supplement the analytic proof. No external peer review, formal verification or absolute priority is claimed.</p>",
+  "keywords": [
+    "stable polynomials",
+    "Schur-Agler class",
+    "multiaffine polynomials",
+    "Schur-Weyl duality"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/knese-symmetric-multiaffine-agler",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1007/s11785-012-0262-6",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00209-015-1587-4",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00209-021-02825-4",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

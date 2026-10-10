@@ -1,0 +1,1 @@
+Original research prose, claims and data: CC0-1.0. Original executable code: MIT (LICENSE-CODE). Supplied checker implementations are included as authorised research-package material. Cited primary publications are not redistributed or relicensed. Historical review and downloaded source bodies remain outside this public package.

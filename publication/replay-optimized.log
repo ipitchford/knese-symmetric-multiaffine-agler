@@ -1,0 +1,177 @@
+{
+  "all_exact_checks_passed": true,
+  "rows": [
+    {
+      "n": 1,
+      "dimension": 1,
+      "lemma_orbits": {
+        "Z": 2,
+        "raising": 1
+      },
+      "nonhermitian_tensor_recurrence_orbits": 1,
+      "singular_tensor_recurrence_orbits": 1,
+      "exact_equalities": true
+    },
+    {
+      "n": 2,
+      "dimension": 2,
+      "lemma_orbits": {
+        "Z": 4,
+        "raising": 2
+      },
+      "nonhermitian_tensor_recurrence_orbits": 4,
+      "singular_tensor_recurrence_orbits": 4,
+      "exact_equalities": true
+    },
+    {
+      "n": 3,
+      "dimension": 4,
+      "lemma_orbits": {
+        "Z": 6,
+        "raising": 4
+      },
+      "nonhermitian_tensor_recurrence_orbits": 10,
+      "singular_tensor_recurrence_orbits": 10,
+      "exact_equalities": true
+    },
+    {
+      "n": 4,
+      "dimension": 8,
+      "lemma_orbits": {
+        "Z": 9,
+        "raising": 6
+      },
+      "nonhermitian_tensor_recurrence_orbits": 20,
+      "singular_tensor_recurrence_orbits": 20,
+      "exact_equalities": true
+    },
+    {
+      "n": 5,
+      "dimension": 16,
+      "lemma_orbits": {
+        "Z": 12,
+        "raising": 9
+      },
+      "nonhermitian_tensor_recurrence_orbits": 35,
+      "singular_tensor_recurrence_orbits": 35,
+      "exact_equalities": true
+    },
+    {
+      "n": 6,
+      "dimension": 32,
+      "lemma_orbits": {
+        "Z": 16,
+        "raising": 12
+      },
+      "nonhermitian_tensor_recurrence_orbits": 56,
+      "singular_tensor_recurrence_orbits": 56,
+      "exact_equalities": true
+    },
+    {
+      "n": 7,
+      "dimension": 64,
+      "lemma_orbits": {
+        "Z": 20,
+        "raising": 16
+      },
+      "nonhermitian_tensor_recurrence_orbits": 84,
+      "singular_tensor_recurrence_orbits": 84,
+      "exact_equalities": true
+    },
+    {
+      "n": 8,
+      "dimension": 128,
+      "lemma_orbits": {
+        "Z": 25,
+        "raising": 20
+      },
+      "nonhermitian_tensor_recurrence_orbits": 120,
+      "singular_tensor_recurrence_orbits": 120,
+      "exact_equalities": true
+    }
+  ],
+  "seconds": 0.16572154202731326
+}
+{"checker": "exact-operator-checks.py", "sha256": "1b51786d189d4a45a344ef9dd248a4a5fd10218fc42eb6f05782413f5ca38159", "passed": true}
+{"kind": "twirl_full_matrix", "n": 1, "basis_count": 3, "entries_per_basis": 4, "passed": true}
+{"kind": "twirl_full_matrix", "n": 2, "basis_count": 3, "entries_per_basis": 16, "passed": true}
+{"kind": "twirl_full_matrix", "n": 3, "basis_count": 3, "entries_per_basis": 64, "passed": true}
+{"kind": "twirl_full_matrix", "n": 4, "basis_count": 3, "entries_per_basis": 256, "passed": true}
+{"kind": "twirl_full_matrix", "n": 5, "basis_count": 3, "entries_per_basis": 1024, "passed": true}
+{"kind": "twirl_full_matrix", "n": 6, "basis_count": 3, "entries_per_basis": 4096, "passed": true}
+{"kind": "equal_diagonal_full_transfer", "n": 1, "heterogeneous_nonhermitian": true, "union_full_entries": 3, "passed": true}
+{"kind": "equal_diagonal_full_transfer", "n": 2, "heterogeneous_nonhermitian": true, "union_full_entries": 9, "passed": true}
+{"kind": "equal_diagonal_full_transfer", "n": 3, "heterogeneous_nonhermitian": true, "union_full_entries": 27, "passed": true}
+{"kind": "equal_diagonal_full_transfer", "n": 4, "heterogeneous_nonhermitian": true, "union_full_entries": 81, "passed": true}
+{"kind": "equal_diagonal_full_transfer", "n": 5, "heterogeneous_nonhermitian": true, "union_full_entries": 243, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 1, "repeated_roots": false, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 1, "repeated_roots": true, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 2, "repeated_roots": false, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 2, "repeated_roots": true, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 3, "repeated_roots": false, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 3, "repeated_roots": true, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 4, "repeated_roots": false, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 4, "repeated_roots": true, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 5, "repeated_roots": false, "complex_scale": true, "passed": true}
+{"kind": "root_and_matching_full_matrix", "n": 5, "repeated_roots": true, "complex_scale": true, "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n1-k0-complex-repeated", "n": 1, "weights": ["1"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n1-k1-complex-repeated", "n": 1, "weights": ["7/5"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n2-k0-complex-repeated", "n": 2, "weights": ["2", "2"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n2-k1-complex-repeated", "n": 2, "weights": ["12/5", "12/7"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n2-k2-complex-repeated", "n": 2, "weights": ["14/5", "82/35"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n4-k0", "n": 4, "weights": ["4", "4", "4", "4"], "passed": true}
+{"kind": "clark_exact_phase_and_weights", "case": "n4-k4", "n": 4, "weights": ["28/3", "28/3", "28/3", "28/3"], "passed": true}
+{"kind": "completion", "time_utc": "2026-10-10T14:17:58.489309+00:00", "all_passed": true}
+{"checker": "independent-exact-checks.py", "sha256": "64a29bad6ad5ba02cae6ca51454badab6967cb599474f53f1f53e2b778ce634c", "passed": true}
+{
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy_version": "1.14.0",
+  "generated_utc": "2026-10-10T14:17:59.175096+00:00",
+  "wall_seconds": 0.6781419580220245,
+  "script_sha256": "d77461d6ca9134f29d7f51e4e81686a33f2b7a5e90c06156e9de5654f9f652bb",
+  "checks": [
+    {
+      "kind": "fresh_exact_interpolation",
+      "label": "four repeated complex reciprocal roots",
+      "formal_degree": 4,
+      "actual_univariate_degree": 4,
+      "node_count": 4,
+      "weights": [
+        "10",
+        "4",
+        "2",
+        "8"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "fresh_exact_interpolation",
+      "label": "degree two inside formal degree four",
+      "formal_degree": 4,
+      "actual_univariate_degree": 2,
+      "node_count": 4,
+      "weights": [
+        "10",
+        "5/2",
+        "4",
+        "4"
+      ],
+      "passed": true
+    },
+    {
+      "kind": "fresh_exact_hereditary_substitution",
+      "tuple_dimension": 3,
+      "variable_count": 3,
+      "tuple_commutes": true,
+      "tuple_not_doubly_commuting": true,
+      "B_principal_minors_checked": 15,
+      "operator_defect_principal_minors_checked": 7,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "limits": "Three exact finite examples target phase, degree and adjoint-order risks; they do not establish the universal theorem."
+}
+{"checker": "fresh-targeted-checks.py", "sha256": "d77461d6ca9134f29d7f51e4e81686a33f2b7a5e90c06156e9de5654f9f652bb", "passed": true}
+{"negative_control": "incorrect inverse-binomial weight", "rejected": true, "optimized": true}
+{"all_passed": true, "optimized": true, "scope": "Bounded exact consistency checks; no formal or external verification"}

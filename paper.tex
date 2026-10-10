@@ -1,0 +1,293 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=29mm]{geometry}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Stable symmetric multiaffine polynomials are Agler denominators},pdfauthor={Anonymous}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\Tw}{Tw}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Pol}{Pol}
+\newcommand{\D}{\mathbb D}
+\newcommand{\T}{\mathbb T}
+\newcommand{\C}{\mathbb C}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\Ps}{P_{\mathrm{sym}}}
+\newcommand{\bin}[2]{\binom{#1}{#2}}
+\title{Stable symmetric multiaffine polynomials\protect\\are Agler denominators}
+\author{Anonymous}
+\date{10 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $p$ be a nonzero symmetric multiaffine polynomial in any finite number of variables, with no zeros in the open unit polydisk. We prove that its reflected quotient, using its actual multidegree, belongs to the Schur--Agler class. The argument constructs the coefficient matrix in Knese's criterion as a positive weighted permutation average of tensor products of rank-one root projectors. A two-dimensional Schur--Weyl branching identity determines the weights and proves the formula in every dimension. An elementary finite Blaschke interpolation formula reduces strictly stable polynomials to polynomials whose roots lie on the unit circle. Radial approximation permits boundary zeros. We also give a root-matching formula for the symmetry blocks of the boundary coefficient matrix.
+\end{abstract}
+
+\section{Statement and notation}
+Write $\D=\{t\in\C:|t|<1\}$ and $\T=\partial\D$. If $p$ has actual multidegree $\nu$, its reflection is the polynomial
+\[
+ \widetilde p(z)=z^\nu\overline{p(1/\overline z_1,\ldots,1/\overline z_n)}.
+\]
+An analytic $\phi$ on $\D^n$ is in the Schur--Agler class if
+$\|\phi(T_1,\ldots,T_n)\|\leq1$ for every commuting tuple of strict contractions on a separable Hilbert space.
+A stable polynomial is called an \emph{Agler denominator} when its reflected quotient, with the actual multidegree, belongs to this class.
+
+\begin{theorem}\label{thm:main}
+For every $n\geq1$, let $p\in\C[z_1,\ldots,z_n]$ be nonzero, symmetric and multiaffine, and suppose $p(z)\neq0$ throughout $\D^n$. Then $\widetilde p/p$ belongs to the Schur--Agler class. Boundary zeros and common factors are allowed. No monomial multiplier is required.
+\end{theorem}
+
+Knese posed the strictly stable version in \cite[Question 1.4]{knese2010} and the open-polydisk version in \cite[Problem 3]{kneseSurvey}. His coefficient criterion \cite[Theorem 3.3 and (3.5)]{knese2010} isolates a positive semidefiniteness condition. We prove that condition automatically. We use its coefficient normalization, but verify the full polynomial kernel identity directly below. The advance is automatic membership throughout the stated class; the general consequences of an Agler decomposition are inherited. We do not assert a general complexity improvement or a theorem for nonsymmetric polynomials.
+
+The all-dimensional linear case was established in \cite[Corollary 5.7]{linear}. The eventual-denominator theorem \cite[Corollary 3.2]{eventual} allows an enlarged reflection degree, and hence an extra monomial; that conclusion does not yield the exact quotient here. Representation-theoretic polarisation and its scalar stability consequences are established methods; see \cite[Propositions A.7 and B.1]{leake}. Our additional step is a positive coefficient lift satisfying every equation of the Agler identity. The interpolation used below is the finite Clark-basis mechanism \cite{clark}, for which we retain an elementary polynomial proof.
+
+The proof first selects positive weights that cancel all unwanted positive-spin components of a permutation average. Equal-diagonal polarisation then transfers this cancellation to every coefficient equation. Unit-circle root factors give positive matrices directly; finite Clark interpolation and radial approximation extend the construction to the entire stated class.
+
+Every symmetric multiaffine $p$ has a unique expression
+\begin{equation}\label{eq:pol}
+ p(z)=\Pol_n q(z)=\sum_{\alpha\subset[n]}
+       \frac{q_{|\alpha|}}{\bin n{|\alpha|}}z^\alpha,
+ \qquad q(t)=p(t,\ldots,t)=\sum_{j=0}^n q_jt^j.
+\end{equation}
+For any polynomial $q$ of degree at most $n$, use the \emph{formal} reflection
+$q_n^*(t)=t^n\overline{q(1/\bar t)}$. Its polynomial kernel is
+\begin{equation}\label{eq:K}
+ K_q(t,w)=\frac{q(t)\overline{q(w)}-q_n^*(t)\overline{q_n^*(w)}}{1-t\bar w}
+         =\sum_{j,k=0}^{n-1} A(q)_{jk}t^j\bar w^k.
+\end{equation}
+The quotient is a polynomial: the numerator vanishes when $t\bar w=1$, and separate polynomial division gives degrees at most $n-1$. All out-of-range coefficients are zero. Comparing coefficients gives
+\begin{equation}\label{eq:diff}
+ q_j\bar q_k-\bar q_{n-j}q_{n-k}=A(q)_{jk}-A(q)_{j-1,k-1}.
+\end{equation}
+
+\section{A weighted permutation-average identity}
+On $\HH_N=(\C^2)^{\otimes N}$, use the orthonormal subset basis $e_\alpha$, with bit $1$ exactly in $\alpha$. Put $\HH_0=\C$. Let $U_\sigma$ permute tensor factors, and set
+\[
+ \Tw_N(X)=\frac1{N!}\sum_{\sigma\in S_N}U_\sigma XU_\sigma^{-1},
+ \qquad J_Y=\sum_{s=1}^N Y_s.
+\]
+Here $Y_s$ acts on factor $s$ and $\Ps^N$ projects onto the symmetric tensors.
+For $m=n-1$, let $P_\ell^{(m)}$ be the orthogonal $S_m$-isotypic projection corresponding to $(m-\ell,\ell)$, and define
+\begin{equation}\label{eq:E}
+ E_m=\sum_{\ell=0}^{\lfloor m/2\rfloor}\lambda_\ell P_\ell^{(m)},
+ \qquad \lambda_\ell=\frac1{n\bin n\ell}.
+\end{equation}
+In particular $E_0=1$.
+
+\begin{lemma}\label{lem:twirl}
+For every traceless $2\times2$ complex matrix $Y$,
+\begin{equation}\label{eq:twirl}
+ \Tw_n(Y\otimes E_m)=\frac1{n^2}J_Y\Ps^n.
+\end{equation}
+\end{lemma}
+\begin{proof}
+We specify the representation facts and the normalization. The two-dimensional Schur--Weyl decomposition is
+\[
+ \HH_N=\bigoplus_{\ell=0}^{\lfloor N/2\rfloor}
+       V_{(N-2\ell)/2}\otimes W_{(N-\ell,\ell)}.
+\]
+Here $SU(2)$ is the group of unitary $2\times2$ matrices of determinant one, acting simultaneously on all tensor factors. Its spin-$J$ irreducible representation $V_J$ has dimension $2J+1$ (equivalently, it is the space of homogeneous polynomials of degree $2J$ in two variables). The space $W_\eta$ is the irreducible permutation representation indexed by $\eta$. The multiplicity dimension is
+\[
+ f(N,\ell)=\bin N\ell-\bin N{\ell-1}.
+\]
+Only valid two-row shapes are included. The restriction to $S_{N-1}$ deletes one removable corner of the shape. Also $V_J\otimes V_J^*$ contains spins $0,1,\ldots,2J$, each once. These are standard tensor-product and branching facts; see \cite[Sections II--IV]{bch}. They imply that permutation averaging removes inter-shape blocks and takes the normalized partial trace over each $W$ factor.
+
+The left side of \eqref{eq:twirl} depends linearly and $SU(2)$-covariantly on $Y$. On a nonzero spin-$J$ block it therefore equals $\alpha_\ell J_Y$ on $V_J$, tensored with the identity on $W_{(n-\ell,\ell)}$. On spin zero it vanishes, because there is no spin-one component. It suffices initially to use Hermitian traceless $Y$; complex linearity covers every traceless $Y$.
+
+Fix $J=(n-2\ell)/2>0$. Singling out the first spin $s=1/2$, the other $m$ spins have the two possible spins $K=J-1/2$ and $K=J+1/2$, with multiplicity dimensions $f(m,\ell)$ and $f(m,\ell-1)$ and weights $\lambda_\ell$ and $\lambda_{\ell-1}$, respectively. Absent branches contribute zero. Rotational covariance in a fixed branch gives
+\[
+ P_J\mathbf sP_J=\beta_K\mathbf J,
+ \qquad
+ \beta_K=\frac{J(J+1)+3/4-K(K+1)}{2J(J+1)}.
+\]
+Indeed, take the scalar product with $\mathbf J$ and use
+$2\mathbf s\cdot\mathbf J=\mathbf J^2+\mathbf s^2-\mathbf K^2$.
+Thus $\beta_{J-1/2}=1/(2J)$ and $\beta_{J+1/2}=-1/(2(J+1))$. The same ratios hold between $Y$ on the singled-out factor and $J_Y$: Pauli matrices are twice the spin generators. Taking the normalized multiplicity trace gives
+\begin{equation}\label{eq:alpha}
+ \alpha_\ell=\frac1{f(n,\ell)}
+ \left(\frac{\lambda_\ell f(m,\ell)}{2J}
+       -\frac{\lambda_{\ell-1}f(m,\ell-1)}{2(J+1)}\right).
+\end{equation}
+For $\ell=0$, only the first branch occurs, and $\alpha_0=\lambda_0/n=1/n^2$.
+This also explains the choice of weights: the symmetric-block normalisation requires $\lambda_0=1/n$, while setting the two-branch expression to zero forces
+\[
+ \frac{\lambda_\ell}{\lambda_{\ell-1}}
+ =\frac{\ell}{n-\ell+1}.
+\]
+Its solution is precisely $\lambda_\ell=1/[n\bin n\ell]$; no additional spin-dimension factor enters the multiplicity trace.
+For $\ell\geq1$ and $J>0$, factorial simplification gives
+\begin{align*}
+ \frac{f(m,\ell)}{2J}&=\frac{\bin m\ell}{n-\ell},&
+ \frac{f(m,\ell-1)}{2(J+1)}&=\frac{\bin m{\ell-1}}{n-\ell+1},\\
+ \frac{\lambda_\ell f(m,\ell)}{2J}&=\frac1{n^2},&
+ \frac{\lambda_{\ell-1}f(m,\ell-1)}{2(J+1)}&=\frac1{n^2}.
+\end{align*}
+The two terms cancel. Hence only the fully symmetric block remains, proving \eqref{eq:twirl}. For $n=1$ the identity is immediate.
+\end{proof}
+
+\section{Equal-diagonal matrices and the full coefficient identity}
+For example, when $n=4$, the unwanted $J=1$ block has $\lambda_1=1/16$, $\lambda_0=1/4$, $f(3,1)=2$ and $f(3,0)=1$. Its opposite contributions are $(1/16)2/2=1/16$ and $(1/4)1/4=1/16$, so they cancel exactly.
+
+For an operator $G$ on $\HH_m$ define its unnormalized symmetric compression by
+\[
+ u_j^{(m)}=\sum_{|\alpha|=j}e_\alpha,
+ \qquad A(G)_{jk}=(u_j^{(m)})^*G u_k^{(m)}.
+\]
+As usual $u_j=0$ outside its range. Put $Z=\operatorname{diag}(1,-1)$.
+
+\begin{proposition}\label{prop:equal}
+For any equal-diagonal matrices $M_1,\ldots,M_m$, let
+\[
+ S(M_1,\ldots,M_m)=\frac1{m!}\sum_{\pi\in S_m}
+                         \bigotimes_{i=1}^m M_{\pi(i)}.
+\]
+Writing this operator as $G$, one has
+\begin{equation}\label{eq:full}
+ n\Tw_n(Z\otimes E_mG)=\Ps^n(Z\otimes G)\Ps^n.
+\end{equation}
+For $m=0$, the empty tensor product is $1$.
+\end{proposition}
+\begin{proof}
+First let $G=M^{\otimes m}$ with $M=\left(\begin{smallmatrix}d&y\\x&d\end{smallmatrix}\right)$ invertible. Then $Y=ZM^{-1}$ is traceless. Every permutation, $E_m$, and the symmetric projection commute with the corresponding tensor powers of $M$. Multiplying \eqref{eq:twirl} on the right by $nM^{\otimes n}$ gives
+\[
+ n\Tw_n(Z\otimes E_mG)=\frac1n J_Y\Ps^nM^{\otimes n}.
+\]
+On symmetric tensors a singled-out operator averages over its $n$ slots:
+\[
+ \Ps^n(Y\otimes I^{\otimes m})\Ps^n=\frac1n J_Y\Ps^n.
+\]
+Since $YM=Z$, multiplying this equality by $M^{\otimes n}$ proves \eqref{eq:full} for tensor powers. Both sides are polynomial in $d,x,y$, so equality holds for singular $M$ too. Substitute $M=\sum_i t_iM_i$ and equate the coefficient of $t_1\cdots t_m$. Division by $m!$ proves the stated polarized identity. This step does not require the individual $M_i$ to commute.
+\end{proof}
+
+For clarity, \eqref{eq:full} includes \emph{all} subset coefficient equations. Its right-hand entry at $\alpha,\beta\subset[n]$, with $j=|\alpha|$, $k=|\beta|$, is
+\begin{equation}\label{eq:entry}
+ \frac{A(G)_{jk}-A(G)_{j-1,k-1}}{\bin nj\bin nk}.
+\end{equation}
+This follows from $\Ps^ne_\alpha=u_j^{(n)}/\bin nj$ and splitting the first bit into $0$ and $1$. If $B=E_mG$, then $B$ is permutation invariant and
+$n\Tw_n(Z\otimes B)$ is the sum of the $n$ embeddings with $Z$ in the singled-out slot. Denote its invariant entries by $B_{jk}^i$, where $i$ is the intersection size. The resulting entry is
+\begin{equation}\label{eq:recurrence}
+ (n-j-k+i)B_{jk}^i-iB_{j-1,k-1}^{i-1}.
+\end{equation}
+The counts are the slots in neither subset and the slots in both. Slots in exactly one subset contribute zero. Equating \eqref{eq:entry} and \eqref{eq:recurrence} recovers Knese's recurrence. For entries of $B$, $j+k-i\leq m$, so the first factor is positive and the recurrence determines them uniquely. Importantly, \eqref{eq:full} also verifies the equations with $|\alpha\cup\beta|=n$, which are not used to solve that recurrence.
+
+\section{Positive boundary matrices}
+Suppose
+$r(t)=c\prod_{i=1}^m(1-a_it)$, with $|a_i|=1$ and $c\neq0$; repeated roots are permitted. Set
+\begin{equation}\label{eq:rootG}
+ v_i=(1,-a_i)^{\mathsf t},\qquad
+ G_r=|c|^2S(v_1v_1^*,\ldots,v_mv_m^*),\qquad B_n(r)=E_mG_r.
+\end{equation}
+Each root projector has equal diagonal entries. Its tensor amplitudes summed over $j$-subsets are the coefficient of $t^j$ in $r/c$, independently of the root assignment. Consequently
+\begin{equation}\label{eq:compress}
+ A(G_r)_{jk}=r_j\bar r_k.
+\end{equation}
+Also $r_m^*=\kappa r$ for some $|\kappa|=1$, so $r_n^*=\kappa tr$ and $K_r(t,w)=r(t)\overline{r(w)}$.
+
+The operator $G_r$ is positive semidefinite and permutation invariant. Since the projections in \eqref{eq:E} are central permutation operators, they commute with $G_r$. Therefore
+\begin{equation}\label{eq:positive}
+ B_n(r)=\sum_{\ell=0}^{\lfloor m/2\rfloor}
+              \frac{P_\ell^{(m)}G_rP_\ell^{(m)}}{n\bin n\ell}\succeq0.
+\end{equation}
+Proposition \ref{prop:equal} supplies the full coefficient identity for this matrix and the kernel $K_r$. No root-distinctness or dimension restriction has been used.
+
+\section{Interpolation from stable polynomials}
+The next identity is finite Clark interpolation in polynomial form; compare the orthogonal kernel bases in \cite[(1.7)--(1.8)]{clark}.
+\begin{lemma}\label{lem:clark}
+Let $q$ have degree at most $n$ and have no zeros in $\overline\D$. For $|\lambda|=1$, put $\phi=q_n^*/q$ and $Q=q-\bar\lambda q_n^*$. There are $n$ distinct nodes $\xi_i\in\T$ with $\phi(\xi_i)=\lambda$. Set
+\[
+ r_i(t)=\frac{Q(t)}{t-\xi_i},\qquad
+ \rho_i=\xi_i\bar\lambda\phi'(\xi_i)>0.
+\]
+Then each $r_i$ has degree $n-1$ and only unit-circle roots, and
+\begin{equation}\label{eq:clark}
+ K_q(t,w)=\sum_{i=1}^n\rho_i^{-1}r_i(t)\overline{r_i(w)}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+If $\deg q=k$, factor $q(t)=c\prod_{h=1}^k(1-b_ht)$ with $|b_h|<1$. Thus $\phi$ is, up to a unimodular scalar, $t^{n-k}\prod_h(t-\bar b_h)/(1-b_ht)$, a finite Blaschke product of degree $n$. Its angular derivative on $\T$ is the positive sum of $n$ Poisson kernels, counting the zeros at zero. It follows that $\phi(\xi)=\lambda$ has $n$ distinct unit-circle solutions and that their $\rho_i$ are positive real numbers. The polynomial $Q$ has degree $n$: its leading coefficient is $q_n-\bar\lambda\bar q_0\neq0$, since $|q_n|<|q_0|$. These $n$ solutions are therefore all of its roots.
+
+At $w=\xi_i$, polynomial cancellation in \eqref{eq:K} gives
+\[
+ K_q(t,\xi_i)=-\xi_i\overline{q(\xi_i)}r_i(t),
+ \qquad
+ r_i(\xi_i)=Q'(\xi_i)=-\frac{\rho_iq(\xi_i)}{\xi_i}.
+\]
+Every $r_h(\xi_i)$ with $h\neq i$ is zero. The $i$th summand on the right of \eqref{eq:clark}, evaluated at $w=\xi_i$, equals the displayed kernel value. Both sides are polynomials in $\bar w$ of degree at most $n-1$ and agree at the $n$ distinct nodes, proving the identity. This proof also covers $k=0$ and $n=1$.
+\end{proof}
+
+Define, for this $q$,
+\begin{equation}\label{eq:Bq}
+ B_n(q)=\sum_{i=1}^n\rho_i^{-1}B_n(r_i)\succeq0.
+\end{equation}
+By \eqref{eq:clark}, \eqref{eq:compress} and linearity of the full coefficient identity, this matrix satisfies \eqref{eq:entry}--\eqref{eq:recurrence} with $A=A(q)$. The recurrence's uniqueness shows that $B_n(q)$ is independent of $\lambda$ and is a linear function of $A(q)$.
+
+\section{The polynomial kernel and operator bound}
+For a subset-indexed matrix $B$ on $\HH_m$, put
+\[
+ R_B(x,y)=\sum_{\alpha,\beta\subset[m]}B_{\alpha\beta}x^\alpha\overline{y^\beta}.
+\]
+An omission $z_{\widehat s}$ lists all variables other than $s$ in their increasing order. Permutation invariance makes the ordering immaterial. Equations \eqref{eq:diff}, \eqref{eq:entry} and \eqref{eq:recurrence}, including the union-$n$ equations, imply
+\begin{equation}\label{eq:Agler}
+ p(z)\overline{p(w)}-\widetilde p_{\boldsymbol1}(z)\overline{\widetilde p_{\boldsymbol1}(w)}
+  =\sum_{s=1}^n(1-z_s\bar w_s)
+        R_{B_n(q)}(z_{\widehat s},w_{\widehat s}),
+\end{equation}
+where $p=\Pol_nq$ and $\widetilde p_{\boldsymbol1}$ is the formal reflection with degree one in every variable. Indeed, the left coefficient at $(\alpha,\beta)$ is \eqref{eq:entry}, and the right coefficient counts exactly the slots in neither subset and in both, as in \eqref{eq:recurrence}.
+
+Now let $p$ be the nonconstant polynomial in Theorem \ref{thm:main}. Symmetry implies that every variable has degree exactly one: if a variable were absent, every variable would be absent. Hence $\widetilde p=\widetilde p_{\boldsymbol1}$. For $0<R<1$, $p_R(z)=p(Rz)$ has no zeros in the closed polydisk, and $q_R(t)=q(Rt)$ has no zeros in $\overline\D$. The construction above gives $B_n(q_R)\succeq0$ and \eqref{eq:Agler} for $p_R$ and its formal reflection. The coefficients of $A(q_R)$ are continuous in $R$: explicitly they are obtained from \eqref{eq:diff} by successive coefficient addition. The uniquely solved recurrence is a fixed linear map. Thus $B_n(q_R)$ converges as $R\uparrow1$ to a positive semidefinite matrix $B$, and \eqref{eq:Agler} passes coefficientwise to $p$ and its actual reflection.
+
+Factor $B=CC^*$. Then each kernel in \eqref{eq:Agler} is a finite sum $\sum_hF_{s,h}(z)\overline{F_{s,h}(w)}$, with $F_{s,h}$ depending only on the variables other than $s$. Substitute a commuting strict-contraction tuple $T$ in hereditary order, mapping $z^\alpha\bar w^\beta$ to $T^\alpha(T^\beta)^*$. The polynomial identity gives
+\begin{equation}\label{eq:operators}
+ p(T)p(T)^*-\widetilde p(T)\widetilde p(T)^*
+  =\sum_{s,h}F_{s,h}(T)(I-T_sT_s^*)F_{s,h}(T)^*\succeq0.
+\end{equation}
+No commutation of $T_s$ with $T_j^*$ is needed. Since $1/p$ is analytic on $\D^n$, its Taylor series converges absolutely in operator norm at $T$: choose a common radius strictly between $\max_s\|T_s\|$ and $1$ and apply Cauchy coefficient bounds. It gives $p(T)^{-1}$. Multiplying \eqref{eq:operators} on the left by $p(T)^{-1}$ and on the right by $p(T)^{-*}$ proves $I-\phi(T)\phi(T)^*\succeq0$ for $\phi=\widetilde p/p$. This proves the asserted norm bound. If $p$ is a nonzero constant, its actual multidegree is zero and $\phi=\bar p/p$ is unimodular. This finishes the proof of Theorem \ref{thm:main}.
+
+\section{Root-matching blocks}
+The positive formula also gives explicit smaller symmetry blocks. Let $0\leq\ell\leq\lfloor m/2\rfloor$, $d=m-2\ell$, and
+\[
+ w_{\ell,a}=(e_{10}-e_{01})^{\otimes\ell}\otimes u_a^{(d)},
+ \qquad 0\leq a\leq d.
+\]
+These vectors lie in spin $d/2$, hence in $P_\ell^{(m)}\HH_m$. They are not normalized. For an unordered matching $\mathcal M$ of $\ell$ disjoint root pairs, let $b(\mathcal M)$ be the coefficient vector of
+$\prod_{i\ \mathrm{unmatched}}(1-a_it)$, of length $d+1$.
+
+\begin{corollary}\label{cor:matching}
+For $r=c\prod_{i=1}^m(1-a_it)$, $|a_i|=1$, the block
+$H_\ell=(w_{\ell,a}^*B_n(r)w_{\ell,b})_{a,b=0}^d$ equals
+\begin{equation}\label{eq:matching}
+ H_\ell=|c|^2c_{n,\ell}\sum_{\mathcal M}
+       \left(\prod_{\{i,j\}\in\mathcal M}|a_i-a_j|^2\right)
+       b(\mathcal M)b(\mathcal M)^*,
+ \quad
+ c_{n,\ell}=\frac{2^\ell(\ell!)^2(m-2\ell)!(n-\ell)!}{n^2(m!)^2}.
+\end{equation}
+\end{corollary}
+\begin{proof}
+Contract $w_{\ell,a}$ with an assigned root tensor. Each singlet gives a signed root difference, and the remaining symmetric vector gives the coefficient indexed by $a$. Squaring eliminates the orientations' signs. A fixed unordered matching occurs $2^\ell\ell!(m-2\ell)!$ times among the $m!$ assignments: orient each pair, assign the pairs to the fixed singlet slots, and order the unmatched roots. Multiply this count divided by $m!$ by $\lambda_\ell=1/(n\bin n\ell)$ to get \eqref{eq:matching}.
+\end{proof}
+
+\section{Verification and scope}
+For spectral use of Corollary~\ref{cor:matching}, the vectors $w_{\ell,a}$ are orthogonal with squared norms $2^\ell\bin da$. Thus, with
+\[
+ D_\ell=\operatorname{diag}_{a=0}^{d}\!\left(2^\ell\bin da\right),
+ \qquad \widehat H_\ell=D_\ell^{-1/2}H_\ell D_\ell^{-1/2},
+\]
+$\widehat H_\ell$ is the orthonormal spin block, repeated with multiplicity $f(m,\ell)$. Congruence preserves positivity, not eigenvalues; equation~\eqref{eq:matching} describes $H_\ell$, not $\widehat H_\ell$.
+
+The proof is analytic and unrestricted in $n$. Ancillary exact rational calculations verify the weighted identity and recurrence on complete permutation-entry orbits for $n=1,\ldots,8$, and the branching normalization through $n=100$. They are supplied as reproducible consistency checks, not as a replacement for Lemma \ref{lem:twirl}. The boundary argument covers repeated roots, and radial approximation covers zeros on the boundary of the polydisk. The formal degree used in the kernel construction is kept separate from the actual degree used in the theorem. There is no coprimeness hypothesis.
+
+\begin{thebibliography}{9}
+\bibitem{knese2010} G. Knese, \emph{Stable symmetric polynomials and the Schur--Agler class}, Illinois J. Math. \textbf{55} (2011), no.~4, 1603--1620 (published 2013); arXiv:1008.4560 (2010). \url{https://arxiv.org/abs/1008.4560}.
+\bibitem{kneseSurvey} G. Knese, \emph{Rational inner functions on the polydisk---a survey}, arXiv:2409.14604v3 (2025), Problem 3. \url{https://arxiv.org/abs/2409.14604v3}.
+\bibitem{bch} D. Bacon, I. L. Chuang and A. W. Harrow, \emph{The quantum Schur transform: I. Efficient qudit circuits}, Proc. SODA (2007), 1235--1244; arXiv:quant-ph/0601001 (submitted December 2005), Sections II--IV. \url{https://arxiv.org/abs/quant-ph/0601001}.
+\bibitem{linear} A. Grinshpan, D. S. Kaliuzhnyi-Verbovetskyi and H. J. Woerdeman, \emph{Norm-constrained determinantal representations of multivariable polynomials}, Complex Anal. Oper. Theory \textbf{7} (2013), 635--654. \url{https://doi.org/10.1007/s11785-012-0262-6}.
+\bibitem{eventual} A. Grinshpan, D. S. Kaliuzhnyi-Verbovetskyi, V. Vinnikov and H. J. Woerdeman, \emph{Contractive determinantal representations of stable polynomials on a matrix polyball}, Math. Z. \textbf{283} (2016), 25--37. \url{https://doi.org/10.1007/s00209-015-1587-4}.
+\bibitem{leake} J. Leake, \emph{A representation theoretic explanation of the Borcea--Br\"and\'en characterization}, Math. Z. \textbf{300} (2022), 1359--1400. \url{https://doi.org/10.1007/s00209-021-02825-4}.
+\bibitem{clark} J. A. Cima, W. T. Ross and W. R. Wogen, \emph{Truncated Toeplitz operators on finite dimensional spaces}, Operators and Matrices \textbf{2} (2008), no.~3, 357--369. \url{https://files.ele-math.com/articles/oam-02-21.pdf}.
+\end{thebibliography}
+\end{document}

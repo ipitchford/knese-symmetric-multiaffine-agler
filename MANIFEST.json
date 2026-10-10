@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0-candidate",
+  "files": [
+    {
+      "path": ".github/workflows/replay.yml",
+      "size_bytes": 343,
+      "sha256": "d5653f08d41f4b61651909491782ba2808a92c81f99ecd35b034da2c1ef741a7"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 37,
+      "sha256": "193d85a43c72dbe61fe77a3ac5942b14da81b419eea57b3a356b401363c6b126"
+    },
+    {
+      "path": ".zenodo.json",
+      "size_bytes": 1500,
+      "sha256": "997a94dfe8f6f2178110e27b8fd3862dfc291dafa59909dab450d57d9262dda7"
+    },
+    {
+      "path": "AI_INDEX.md",
+      "size_bytes": 1782,
+      "sha256": "35f81535d972d517e790474878c5e92f9331c1bb96ee25e757d9a082d1dab12e"
+    },
+    {
+      "path": "ASSURANCE.md",
+      "size_bytes": 795,
+      "sha256": "0e31b72cc7d4741066dd3083084332a4764cbf81e10d669660966b44eb209368"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 284,
+      "sha256": "71215d42a8c3aeda384ca39bc169a1b3f6d20b11d75b0dc66e5d6d533ee97fb1"
+    },
+    {
+      "path": "CITATION_AUDIT.md",
+      "size_bytes": 1490,
+      "sha256": "358ddcc38b7029ff1d02615228d2b370e1a4454c454d00eb8e8c5affc12f5c43"
+    },
+    {
+      "path": "CLAIMS.json",
+      "size_bytes": 502,
+      "sha256": "ee912ed85a7f8cda006335a6a3a60084e97f9bba90252538449f5f66928e200e"
+    },
+    {
+      "path": "ENVIRONMENT.txt",
+      "size_bytes": 63,
+      "sha256": "7cffc332a883537fb855aaadba98f024351e666470c7f943a526609e4825aa11"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 265,
+      "sha256": "1ac7dad3964ab5bb4a086bbc5541963e9d3d275d770729aaaab27cfa55f2d91d"
+    },
+    {
+      "path": "LICENSE-CODE",
+      "size_bytes": 1066,
+      "sha256": "3d9685342ea6ef1a6e2f4a58cabba83b856c75623ed8862470aff97037aceb48"
+    },
+    {
+      "path": "LICENSES.md",
+      "size_bytes": 331,
+      "sha256": "0755f8ab16b2a4125cd4249a4d9b1fe6c32d3faef5bdc5f893bc4fded571a28d"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "size_bytes": 642,
+      "sha256": "6f9fd3a409aa058c08455ac1d902e68959c30ce563793ede7747a14e646ea368"
+    },
+    {
+      "path": "PUBLIC_DOMAIN.md",
+      "size_bytes": 94,
+      "sha256": "7a3cda5616a199be653f59118c24c9c4017f67aaceee3af46e3c3f3f9cb56b5e"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1125,
+      "sha256": "5bb2324f2da75e0ad0b3e54e7f5fe685c9741c4510ea23407980b827ece6f507"
+    },
+    {
+      "path": "REVIEW_RESPONSE.md",
+      "size_bytes": 1826,
+      "sha256": "96b507f501e71463a13967306b0477ce1b0e80d6603116b8deff6a024126cc38"
+    },
+    {
+      "path": "STATUS.md",
+      "size_bytes": 139,
+      "sha256": "5f7c1221f8d860fe9cbdadca17ef90b5e6d6c5a5b3fff8a157cbac119032979b"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "size_bytes": 1143,
+      "sha256": "68156f902b04370e7f0d6c4ef79723c5e9df3ff5976f617bcd67a25dba3a5442"
+    },
+    {
+      "path": "bibliography.bib",
+      "size_bytes": 2033,
+      "sha256": "47fb8e51c75819d8e208c945696b6d55af6e1191c80569c278f290446e226032"
+    },
+    {
+      "path": "claims.md",
+      "size_bytes": 1701,
+      "sha256": "9a236b7da97865e9ff9ce45445f8bc5922fe34554eff2ed7b2e2a648d8f4b5e6"
+    },
+    {
+      "path": "code/check_manifest.py",
+      "size_bytes": 435,
+      "sha256": "40ec3b7baba3e3c654b7ed96968350c3df1ea23d42ee24012600db907c9876ed"
+    },
+    {
+      "path": "code/exact-operator-checks.py",
+      "size_bytes": 6141,
+      "sha256": "1b51786d189d4a45a344ef9dd248a4a5fd10218fc42eb6f05782413f5ca38159"
+    },
+    {
+      "path": "code/fresh-targeted-checks.py",
+      "size_bytes": 5407,
+      "sha256": "d77461d6ca9134f29d7f51e4e81686a33f2b7a5e90c06156e9de5654f9f652bb"
+    },
+    {
+      "path": "code/independent-exact-checks.py",
+      "size_bytes": 8008,
+      "sha256": "64a29bad6ad5ba02cae6ca51454badab6967cb599474f53f1f53e2b778ce634c"
+    },
+    {
+      "path": "code/run_checks.py",
+      "size_bytes": 2034,
+      "sha256": "865c594508a03d5655a8fef2ad6897aa6f8c7a2472c71ad3be94f5acddfc179c"
+    },
+    {
+      "path": "paper.pdf",
+      "size_bytes": 339887,
+      "sha256": "62834df873e4ad6ccb4848716f5331f1015adc90d2c20dd557a1191c766322f1"
+    },
+    {
+      "path": "paper.tex",
+      "size_bytes": 22759,
+      "sha256": "f52ea53f89b7a312e2e7a837bfffbbd941fb118b150a5b21584de2380d8a2b71"
+    },
+    {
+      "path": "prior-art.md",
+      "size_bytes": 5411,
+      "sha256": "6e976bdc33a3b0a5a427b9eca9407b3b342c411a95ee58f734070b69ffd6a833"
+    },
+    {
+      "path": "publication/qa.json",
+      "size_bytes": 311,
+      "sha256": "0fe0854f1f4e0c73518565610cb9a5a6c2fdd3dd6ebe9c62c9e19437bbc0d705"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 14,
+      "sha256": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+    },
+    {
+      "path": "publication/replay-normal.log",
+      "size_bytes": 7401,
+      "sha256": "e0e8f6589f694f456aa82b0163f1e0ed949ac27b69e8eb25db261fba82ff9177"
+    },
+    {
+      "path": "publication/replay-optimized.log",
+      "size_bytes": 7401,
+      "sha256": "5b98ed47072d40987dc36b77c9a495efc179a1c96a4d914b5d69a83c8cc5024d"
+    }
+  ]
+}

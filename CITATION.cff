@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please retain unrefereed candidate status when citing."
+title: "Stable symmetric multiaffine polynomials are Agler denominators"
+authors:
+  - name: Anonymous
+version: 1.1.0-candidate
+date-released: 2026-10-10
+doi: 10.5281/zenodo.23283382
+license: CC0-1.0

@@ -1,0 +1,7 @@
+# Citation and novelty boundary — 10 October 2026
+
+Publication intake read the supplied dated prior-art dossier and review before revisions. Primary-text comparisons checked Knese Question 1.4/Theorem 3.3, the survey Problem 3, Grinshpan et al. 2013 Corollary 5.7 (linear polynomials), 2016 Corollary 3.2 (enlarged reflection degree), Leake A.7/B.1 (representation-theoretic scalar polarisation), and Cima–Ross–Wogen finite Clark bases. These inherited tools do not supply the exact automatic Agler membership statement in the inspected passages. Bacon–Chuang–Harrow was submitted in December 2005 and published in SODA 2007.
+
+The supplied search found no earlier resolving theorem within its recorded boundary. This is not absolute priority proof. The review's Pal–Tomar comparator was abstract-only at review time; publication intake could access https://arxiv.org/html/2608.00827 and inspected its introduction and stated scope: realization/interpolation/corona/extension for a Schur–Agler-type class on the symmetrized polydisc, not the automatic polynomial-membership theorem here. This later access does not rewrite the historical review.
+
+Relevant primary links are in the manuscript bibliography and prior-art.md. The weighted positive coefficient lift and complete coefficient transfer are distinguished from standard Schur–Weyl theory, polarisation, interpolation and radial approximation. No claim of first-ever use of all tensor or matching ingredients is made.

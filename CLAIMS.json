@@ -1,0 +1,16 @@
+{
+  "version": "1.1.0-candidate",
+  "claims": [
+    {
+      "id": "knese-agler-all-n",
+      "statement": "Every nonzero symmetric multiaffine polynomial stable on the open unit polydisk is an Agler denominator with actual multidegree, for every finite n.",
+      "locator": "paper.tex thm:main",
+      "evidence": "Written proof; finite exact ancillary checks",
+      "limitations": [
+        "Unrefereed",
+        "Not formally verified",
+        "No absolute priority guarantee"
+      ]
+    }
+  ]
+}
