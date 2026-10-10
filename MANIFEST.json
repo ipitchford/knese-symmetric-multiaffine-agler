@@ -77,6 +77,11 @@
       "sha256": "5bb2324f2da75e0ad0b3e54e7f5fe685c9741c4510ea23407980b827ece6f507"
     },
     {
+      "path": "RESEARCH_GATES.json",
+      "size_bytes": 4124,
+      "sha256": "41bddf7659830332d9e7dcb02c62ad59832ea659be9811676b598c83bf3b2bfc"
+    },
+    {
       "path": "REVIEW_RESPONSE.md",
       "size_bytes": 1826,
       "sha256": "96b507f501e71463a13967306b0477ce1b0e80d6603116b8deff6a024126cc38"

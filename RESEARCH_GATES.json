@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "version": "1.1.0-candidate",
+  "recordBoundary": "Publication-intake assessment, not reconstructed discovery",
+  "contributionMap": [
+    {"claim":"Automatic Agler membership in all finite dimensions","unit":"statement","paperLocation":"thm:main","searches":[{"date":"2026-10-10","query":"Supplied exact-title and symmetric multiaffine Agler denominator searches; primary comparator refresh"}],"closestPriorWork":"Knese Question 1.4 and coefficient criterion; linear and eventual-denominator theorems","verdict":"new-in-bounded-search"},
+    {"claim":"Positive inverse-binomial lift and full coefficient transfer","unit":"method","paperLocation":"lem:twirl and prop:equal","searches":[{"date":"2026-10-10","query":"Supplied Schur-Weyl Agler, permutation twirling, inverse binomial weights searches; Leake full-text comparison"}],"closestPriorWork":"Schur-Weyl branching and representation-theoretic scalar polarisation are inherited","verdict":"partially-known-cited"},
+    {"claim":"Finite Clark interpolation","unit":"method","paperLocation":"lem:clark","searches":[{"date":"2026-10-10","query":"Cima Ross Wogen finite Clark basis"}],"closestPriorWork":"Cima–Ross–Wogen 2008 (1.7)–(1.8)","verdict":"known-cited"}
+  ],
+  "sourcesReadInFull": [
+    {"citation":"Knese 2010/2011","date":"2026-10-10","readWhat":"Question 1.4, Theorem 3.3 and coefficient criterion","evidenceLocator":"https://arxiv.org/html/1008.4560","usedFor":"Question and inherited criterion"},
+    {"citation":"Grinshpan et al. 2013","date":"2026-10-10","readWhat":"Corollary 5.7 and proof","evidenceLocator":"https://arxiv.org/pdf/1208.2288","usedFor":"Earlier linear subclass"},
+    {"citation":"Grinshpan et al. 2016","date":"2026-10-10","readWhat":"Corollary 3.2 and enlarged-degree conclusion","evidenceLocator":"https://arxiv.org/pdf/1503.06161","usedFor":"Distinguish eventual denominator from exact quotient"},
+    {"citation":"Leake 2022","date":"2026-10-10","readWhat":"Representation and scalar-polarisation comparisons A.7/B.1","evidenceLocator":"https://doi.org/10.1007/s00209-021-02825-4","usedFor":"Method attribution"},
+    {"citation":"Cima Ross Wogen 2008","date":"2026-10-10","readWhat":"Finite Clark basis discussion","evidenceLocator":"https://files.ele-math.com/articles/oam-02-21.pdf","usedFor":"Inherited interpolation"}
+  ],
+  "limitationTriage": [
+    {"limitation":"Weight selection and block convention unclear","closingQuestion":"Can short exact explanations close this?","triedOrSearched":"Added recurrence, worked n=4 example and D_l congruence","estimatedCost":"Bounded revision","cheap":true,"decision":"CLOSED"},
+    {"limitation":"External specialist review and formal verification absent","closingQuestion":"Can existing supplied evidence establish either?","triedOrSearched":"Inspected review provenance and exact-check scope","estimatedCost":"Separate project, unknown","cheap":false,"decision":"OPEN","reasonOpen":"Internal model review and computation are not external or formal assurance."},
+    {"limitation":"Absolute priority","closingQuestion":"Does a bounded primary search establish it?","triedOrSearched":"Supplied dated corpus and targeted primary comparisons","estimatedCost":"Open-ended literature coverage","cheap":false,"decision":"OPEN","reasonOpen":"No finite search guarantees exhaustive priority."},
+    {"limitation":"Further applications and optional radius consequence","closingQuestion":"Are these needed for the exact theorem?","triedOrSearched":"Scoped the referee proposals against the unchanged main statement","estimatedCost":"Separate definition and application development","cheap":false,"decision":"OPEN","reasonOpen":"Optional follow-up, not an unresolved hypothesis of the theorem; no added reach claimed."}
+  ],
+  "extensionScout": {"by":"Codex publication assessment","date":"2026-10-10","proposals":["Weight-selection recurrence","Worked n=4 cancellation","Orthonormal matching blocks","Fail-closed single replay entry point"],"actions":["Added all four bounded improvements; retained theorem scope and explicit external-assurance limits"]}
+}
